@@ -1,0 +1,28 @@
+
+class Box
+{
+double h,w,d;
+public Box(double a, double b, double c)
+{
+h=a;
+w=b;
+d=c;
+}
+void volume()
+{
+double v=h*w*d;
+System.out.println(" h : "+h);
+System.out.println(" w : "+w);
+System.out.println(" d : "+d);
+System.out.println(" Volume : "+v);
+}
+}
+
+class BoxParameterised
+{
+public static void main(String args[])
+{
+Box myBox1 = new Box(2,3,4);
+myBox1.volume();
+}
+}
